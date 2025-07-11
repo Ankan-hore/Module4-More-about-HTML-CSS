@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitha Ghor</title>
+
+    <style>
+        form .basic_info label{
+            display: block;
+            margin-top: 15px;
+        }
+    </style>
+
+
 </head>
 <body>
     <header>
@@ -16,11 +25,17 @@
         <section>
             <h2>Mr baker's Pitha ghat</h2>
             <form>
-                <label for="name">Your name</label>
-                <input type="text" name="" id="name">
 
-                <label for="email">Your email address</label>
-                <input type="email" name="" id="email">
+                <fieldset class="basic_info">
+                    <legend>Basic info</legend>
+
+                    <label for="name">Your name</label>
+                    <input type="text" name="" id="name">
+
+                    <label for="email">Your email address</label>
+                    <input type="email" name="" id="email">
+                </fieldset>
+             
 
 
                 <fieldset>
@@ -69,6 +84,9 @@
                 </fieldset>
 
                 <input type="submit" value="submit">
+                <input type="reset" value="Clear">
+                <br>
+                <input style="margin-left: 50%;" type="date" name="" id="">
             </form>
         </section>
 
